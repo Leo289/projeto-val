@@ -1,4 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
+import email from 'src/app/Email';
+import { EmailService } from 'src/app/services/email.service';
 
 @Component({
   selector: 'app-corpo',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CorpoComponent implements OnInit {
 
-  constructor() { }
+  emails!: email[];
+
+  constructor(private emailService: EmailService) {  }
 
   ngOnInit(): void {
-  }
 
+      this.getEmail();
+
+    }
+    getEmail(){
+      this.emailService.getEmail().subscribe(emails => {
+      this.emails = emails;
+      console.log(emails)
+
+});
+  }
 }

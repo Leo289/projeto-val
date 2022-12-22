@@ -27,6 +27,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { CorpoComponent } from './componentes/corpo/corpo.component';
 import { GaleriadefotosComponent } from './componentes/galeriadefotos/galeriadefotos.component';
+import { ConsultafireComponent } from './consultafire/consultafire.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { GaleriadefotosComponent } from './componentes/galeriadefotos/galeriadef
     FooterComponent,
     HeaderComponent,
     CorpoComponent,
-    GaleriadefotosComponent
+    GaleriadefotosComponent,
+    ConsultafireComponent
   ],
   imports: [
     BrowserModule,
