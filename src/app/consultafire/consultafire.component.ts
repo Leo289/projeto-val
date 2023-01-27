@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Firestore, collection } from '@angular/fire/firestore';
-import Email from '../Email';
+
 import { EmailService } from '../services/email.service';
 
 

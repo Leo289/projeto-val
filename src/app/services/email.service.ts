@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Firestore, collection, addDoc, collectionData } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
-import Email from '../Email';
+import Email from '../email';
+
 
 
 @Injectable({

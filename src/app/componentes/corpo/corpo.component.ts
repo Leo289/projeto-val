@@ -1,7 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
-import email from 'src/app/Email';
 import { EmailService } from 'src/app/services/email.service';
+import Email from '../../email';
+
 
 @Component({
   selector: 'app-corpo',
@@ -10,7 +11,7 @@ import { EmailService } from 'src/app/services/email.service';
 })
 export class CorpoComponent implements OnInit {
 
-  emails!: email[];
+  emails!: Email[];
 
   constructor(private emailService: EmailService) {  }
 
@@ -22,7 +23,7 @@ export class CorpoComponent implements OnInit {
     getEmail(){
       this.emailService.getEmail().subscribe(emails => {
       this.emails = emails;
-      console.log(emails)
+      
 
 });
   }

@@ -1,19 +1,19 @@
 .search-text {
-	
+
 	background-color: #696968;
 	padding-top: 30px;
 	padding-bottom: 50px;
-    
-    
-    
+
+
+
 }
-	
+
 .search-text .input-search {
 	height: 45px;
 	width: 40%;
 	padding-left: 20px;
     color: #333;
-} 
+}
 
 .search-text .btn-search {
     background: #da3e44;
@@ -28,4 +28,9 @@ h4 {
     font-weight: 900;
     font-size: 1.8em;
 	font-family: 'Nerko One', cursive;
+}
+
+
+#msg {
+  display: flex;
 }
