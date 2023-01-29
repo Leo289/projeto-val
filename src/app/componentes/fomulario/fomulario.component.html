@@ -4,8 +4,6 @@
         <div class="row text-center">
             <div class="form">
         <form ngNativeValidate #f="ngForm" (ngSubmit)="onSubmit(f)" id="search-form" class="form-search form-horizontal" >
-
-
             <h4>RECEBA NOSSAS NOVIDADES</h4>
                   <input type="email" ngModel class="input-search" name="email" placeholder="Digite seu e-mail" email/>
                   <!--<mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>-->
@@ -13,7 +11,7 @@
 
 
         </form>
-                        <p id="msg">{{ formMessage }}</p>
+                        <p *ngIf="formMessage">Obrigado por se registrar</p>
             </div>
         </div>
     </div>

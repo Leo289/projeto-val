@@ -2,6 +2,7 @@
 import { EmailService } from './../../services/email.service';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { timer } from 'rxjs';
 
 
 
@@ -13,12 +14,11 @@ import { NgForm } from '@angular/forms';
 })
 export class FomularioComponent implements OnInit {
 
-  public formMessage!: string;
-  public arigato = document.getElementById('msg');
-
-
-
+  formMessage = false;
+  timer = 12;
   constructor(private emailService: EmailService) {
+
+
 
 
   }
@@ -33,19 +33,17 @@ export class FomularioComponent implements OnInit {
     const resposta = await this.emailService.addEmail(f.value);
     f.form.reset();
     console.log(f)
+    this.formMessage = true
     // console.log(resposta);
-    return (this.formMessage = "Obrigado por se registrar");
-
-setTimeout(() => {
-         arigato.style.display = 'none';
-      },3000);
-
+    return setTimeout(() => {
+      this.formMessage = false;
+    }, this.timer * 1000);
 
 
 }
 
 
 
-   
+
 
 }
