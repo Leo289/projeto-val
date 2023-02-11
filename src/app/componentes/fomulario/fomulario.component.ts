@@ -1,10 +1,7 @@
-
-import { EmailService } from './../../services/email.service';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { timer } from 'rxjs';
-
-
+import { NewsletterService  } from '../../services/newsletter.service.';
+import { Newsletter } from '../../newsletter.interface';
 
 
 @Component({
@@ -13,37 +10,29 @@ import { timer } from 'rxjs';
   styleUrls: ['./fomulario.component.css']
 })
 export class FomularioComponent implements OnInit {
+  newsletter: Newsletter = {email: ''
+  };
 
-  formMessage = false;
-  timer = 12;
-  constructor(private emailService: EmailService) {
+  constructor(private newsletterService: NewsletterService) { }
 
-
-
-
+  ngOnInit(): void {
   }
 
-
-
-  ngOnInit(){  }
-
-
-  async onSubmit(f: NgForm){
-
-    const resposta = await this.emailService.addEmail(f.value);
-    f.form.reset();
-    console.log(f)
-    this.formMessage = true
-    // console.log(resposta);
-    return setTimeout(() => {
-      this.formMessage = false;
-    }, this.timer * 1000);
-
-
+  onSubmit(newsletter: NgForm) {
+    this.newsletterService.registerEmail(this.newsletter)
+      .then(() => {
+        console.log('E-mail cadastrado com sucesso!');
+        newsletter.reset();
+      })
+      .catch((error: any) => {
+        console.error(error);
+      });
+  }
 }
 
 
 
 
 
-}
+
+

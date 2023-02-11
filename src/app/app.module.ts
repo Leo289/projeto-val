@@ -6,9 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-
-
 
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
@@ -20,6 +17,7 @@ import { provideFunctions,getFunctions } from '@angular/fire/functions';
 import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { AngularFireModule } from '@angular/fire/compat';
 
 import { FomularioComponent } from './componentes/fomulario/fomulario.component';
 import { FormsModule } from '@angular/forms';
@@ -27,7 +25,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { CorpoComponent } from './componentes/corpo/corpo.component';
 import { GaleriadefotosComponent } from './componentes/galeriadefotos/galeriadefotos.component';
-import { ConsultafireComponent } from './consultafire/consultafire.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +36,7 @@ import { ConsultafireComponent } from './consultafire/consultafire.component';
     HeaderComponent,
     CorpoComponent,
     GaleriadefotosComponent,
-    ConsultafireComponent
+
   ],
   imports: [
     BrowserModule,
@@ -55,9 +54,12 @@ import { ConsultafireComponent } from './consultafire/consultafire.component';
     providePerformance(() => getPerformance()),
     provideStorage(() => getStorage()),
 
-    AngularFirestoreModule
-    
+    AngularFireModule.initializeApp(environment.firebase),
+    MatSnackBarModule
+
+
   ],
+
   providers: [
     ScreenTrackingService,UserTrackingService
   ],

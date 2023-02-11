@@ -1,18 +1,23 @@
-
 <div class="search-text">
-    <div class="container">
-        <div class="row text-center">
-            <div class="form">
-        <form ngNativeValidate #f="ngForm" (ngSubmit)="onSubmit(f)" id="search-form" class="form-search form-horizontal" >
+  <div class="container">
+    <div class="row text-center">
+      <div class="form">
+
+        <form ngNativeValidate #newsletterForm="ngForm" (ngSubmit)="onSubmit(newsletterForm)" id="search-form" class="form-search form-horizontal" >
             <h4>RECEBA NOSSAS NOVIDADES</h4>
-                  <input type="email" ngModel class="input-search" name="email" placeholder="Digite seu e-mail" email/>
-                  <!--<mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>-->
-                  <button type="submit" class="btn-search">ENVIAR</button>
 
+                <div class="form-group">
 
-        </form>
-                        <p *ngIf="formMessage">Obrigado por se registrar</p>
-            </div>
-        </div>
+<input type="email" class="form-control" id="email" name="email" [(ngModel)]="newsletter.email" #email="ngModel"
+                         email />
+
+                    </div>
+                    <button [disabled]="!newsletterForm.valid" type="submit" class="btn btn-primary">
+                      Inscreva-se
+                    </button>
+                  </form>
+                        <!-- <p id="msg" *ngIf="formMessage">Obrigado por se registrar</p> -->
     </div>
-</div>
+    </div>
+    </div>
+    </div>

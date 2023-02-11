@@ -1,7 +1,5 @@
-
 import { Component, OnInit } from '@angular/core';
-import { EmailService } from 'src/app/services/email.service';
-import Email from '../../email';
+
 
 
 @Component({
@@ -11,20 +9,23 @@ import Email from '../../email';
 })
 export class CorpoComponent implements OnInit {
 
-  emails!: Email[];
 
-  constructor(private emailService: EmailService) {  }
 
-  ngOnInit(): void {
+  constructor() {  }
 
-      this.getEmail();
+  ngOnInit(): void {}
 
-    }
-    getEmail(){
-      this.emailService.getEmail().subscribe(emails => {
-      this.emails = emails;
-      
+//     async (params:type) => {
+//         this.getEmail();
 
-});
-  }
+//       }
+//       getEmail(){
+//         this.newsletterService.getEmail().subscribe(emails => {
+//         this.emails = emails;
+
+//     }
+
+// });
+//   }
+// }
 }
