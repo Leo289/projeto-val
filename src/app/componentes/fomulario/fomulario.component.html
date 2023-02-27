@@ -2,22 +2,38 @@
   <div class="container">
     <div class="row text-center">
       <div class="form">
+        <form
 
-        <form ngNativeValidate #newsletterForm="ngForm" (ngSubmit)="onSubmit(newsletterForm)" id="search-form" class="form-search form-horizontal" >
-            <h4>RECEBA NOSSAS NOVIDADES</h4>
+          ngNativeValidate
+          #newsletterForm="ngForm"
+          (ngSubmit)="onSubmit(newsletterForm)"
+          id="search-form"
+          class="form-search form-horizontal"
+        >
+          <h4>RECEBA NOSSAS NOVIDADES</h4>
 
-                <div class="form-group">
 
-<input type="email" class="form-control" id="email" name="email" [(ngModel)]="newsletter.email" #email="ngModel"
-                         email />
+            <input class="input-search"
+              type="email"
+              id="email"
+              name="email"
+              [(ngModel)]="newsletter.email"
+              #emailInput="ngModel"
+            />
+            <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)"></div>
 
-                    </div>
-                    <button [disabled]="!newsletterForm.valid" type="submit" class="btn btn-primary">
-                      Inscreva-se
-                    </button>
-                  </form>
-                        <!-- <p id="msg" *ngIf="formMessage">Obrigado por se registrar</p> -->
+
+
+          <button type="submit" [disabled]="newsletterForm.invalid" class="btn btn-primary">
+            Inscreva-se
+          </button>
+        </form>
+
+      </div>
+      <!--form-->
     </div>
-    </div>
-    </div>
-    </div>
+    <!--row text-center-->
+  </div>
+  <!--container-->
+</div>
+<!--search-text-->
