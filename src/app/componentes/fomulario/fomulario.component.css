@@ -1,13 +1,39 @@
-.search-text {
-  height: 25%;
-  max-height: 30%;
-	background-color: #696968;
-	padding-top: 30px;
-	padding-bottom: 50px;
+.appformulariocss{
+  height: 13.5vh;
+  min-height: 10vh;
+  background-color: #696968;
 }
 
-.search-text .input-search {
-  height: 45px;
+#alteracormsg {
+  color: antiquewhite !important;
+}
+
+.container{
+  padding: 0.8%;
+}
+
+input{
+  width: 20vw;
+  max-width: 350px;
+  height: 40px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: black;
+}
+
+
+
+
+/* .search-text {
+  height: 25%;
+  max-height: 25%;
+	background-color: #696968;
+	padding-top: 30px;
+	padding-bottom: 0px;
+} */
+
+/* .search-text .input-search {
+  height: 40px;
 	width: 40%;
 	padding-left: 20px;
   color: #333;
@@ -21,12 +47,12 @@
 	  color: blanchedalmond;
 	  height: 44px;
     width: 80px;
-}
+} */
 
 h4 {
     color: blanchedalmond;
-    font-weight: 900;
-    font-size: 1.8em;
+    font-weight: 800;
+    font-size: 1.4em;
 	font-family: 'Nerko One', cursive;
 }
 

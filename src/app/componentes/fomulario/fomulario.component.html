@@ -1,3 +1,4 @@
+<div class="appformulariocss">
 <div class="search-text">
   <div class="container">
     <div class="row text-center">
@@ -20,6 +21,7 @@
               [(ngModel)]="newsletter.email"
               #emailInput="ngModel"
             />
+
             <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)"></div>
 
 
@@ -27,6 +29,7 @@
           <button type="submit" [disabled]="newsletterForm.invalid" class="btn btn-primary">
             Inscreva-se
           </button>
+          <div *ngIf="errorMessage || successMessage" class="text-danger" id="alteracormsg">{{ errorMessage }} {{ successMessage }} </div>
         </form>
 
       </div>
@@ -37,3 +40,6 @@
   <!--container-->
 </div>
 <!--search-text-->
+
+</div><!--appformulariocss-->
+

@@ -1,8 +1,8 @@
-*{
+/* *{
     height: 50vh;
     max-height: 50vh;
     line-height: 50vh;
-        
+
 }
 
 .contem_carrocel_um{
@@ -12,7 +12,7 @@
         position: relative;
         top: 50vh;
         transform: translateY(-45vh);
-    
+
 }
 
 img {
@@ -20,11 +20,11 @@ img {
     max-width: 200px;
     max-height: 40vh;
     border-radius: 35px;
-        
+
 }
 
 .carousel-control-next-icon {
-    
+
     position: relative;
     right: 175%;
-}
+} */
