@@ -1,6 +1,18 @@
-main{
+.main{
+   
+
+    height: calc(100vh - 60px);
     width: 100vw;
-    height: 50vh;
+
     max-height: 50vh;
-    background-color: blueviolet;
+    background-image: url("/assets/bg_corpo.jpg");
+    background-color: #cccccc;       /* Used if the image is unavailable */
+    background-position: center;       /* Center the image */
+    background-repeat: no-repeat;      /* Do not repeat the image */
+    background-size: cover;            /* Resize the background image to cover the entire container */
+    color: aliceblue;
+
+    }
+
+.container{
 }

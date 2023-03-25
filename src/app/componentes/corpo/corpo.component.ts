@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 
 
@@ -8,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./corpo.component.css']
 })
 export class CorpoComponent implements OnInit {
-
-
+  
 
   constructor() {  }
 

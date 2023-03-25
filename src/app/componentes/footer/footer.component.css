@@ -3,9 +3,9 @@ footer {
     width: 100vw;
     background-color: #33383c;
     padding: 20px 0px;
-    
-    
-}	       
+
+
+}
 
 .logo {
     color: #FFF;
@@ -13,33 +13,33 @@ footer {
     font-size: 30px;
 }
 
-.address span, 
+.address span,
 .menu span {
 color: blanchedalmond;
-   font-weight: bold; 
-   border-bottom: 1px solid #c7c7c7; 
+   font-weight: bold;
+   border-bottom: 1px solid #c7c7c7;
    padding: 10px 0px;
    display: block;
    text-transform: uppercase;
    font-size: 16px;
    letter-spacing: 3px;
 }
- 
-.address li a, 
+
+.address li a,
 .menu li a {
-    color: #FFF;
+    color: blanchedalmond;
     letter-spacing: 3px;
     text-decoration: none;
     font-size: 14px;
 }
 
-.address li, 
+.address li,
 .menu li {
     margin: 20px 0px;
     list-style: none;
 }
 
-.address li a:hover, 
+.address li a:hover,
 .menu li a:hover {
     color: #da3e44;
     transition: all 1s ease-in-out;

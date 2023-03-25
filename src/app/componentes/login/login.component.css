@@ -1,0 +1,25 @@
+.logincss{
+  color: blanchedalmond;
+  background-color: #33383c;
+  border:none;
+  margin-left: -5px;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.logincss:hover {
+      color: #da3e44;
+      transition: all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+    }
+
+
+a:hover {
+  color: #da3e44;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}

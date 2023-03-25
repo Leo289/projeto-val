@@ -4,11 +4,11 @@ import { Newsletter } from 'src/app/newsletter.interface';
 import { NewsletterService } from 'src/app/newsletter.service';
 
 @Component({
-  selector: 'app-fomulario',
-  templateUrl: './fomulario.component.html',
-  styleUrls: ['./fomulario.component.css']
+  selector: 'app-formulario',
+  templateUrl: './formulario.component.html',
+  styleUrls: ['./formulario.component.css']
 })
-export class FomularioComponent implements OnInit {
+export class FormularioComponent implements OnInit {
   newsletter: Newsletter = { email: '' };
   errorMessage: string = '';
   successMessage: string = '';

@@ -21,23 +21,33 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-import { FomularioComponent } from './componentes/fomulario/fomulario.component';
+import { FormularioComponent } from './componentes/formulario/formulario.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { CorpoComponent } from './componentes/corpo/corpo.component';
 import { GaleriadefotosComponent } from './componentes/galeriadefotos/galeriadefotos.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoginComponent } from './componentes/login/login.component';
+import { AgendamentoComponent } from './componentes/agendamento/agendamento.component';
+
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FomularioComponent,
+    FormularioComponent,
     FooterComponent,
     HeaderComponent,
     CorpoComponent,
     GaleriadefotosComponent,
+    LoginComponent,
+    AgendamentoComponent,
+    
+
 
   ],
   imports: [
@@ -57,7 +67,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     provideStorage(() => getStorage()),
 
     AngularFireModule.initializeApp(environment.firebase),
-    MatSnackBarModule
+    MatSnackBarModule,
+    FontAwesomeModule
 
 
   ],

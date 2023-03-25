@@ -1,4 +1,73 @@
+
+
 <div class="appformulariocss">
+
+
+
+
+
+
+
+<form ngNativeValidate #newsletterForm="ngForm" (ngSubmit)="onSubmit(newsletterForm)" class="" >
+  <h4>RECEBA NOSSAS NOVIDADES</h4>
+
+
+  <input  type="email" id="email" name="email" [(ngModel)]="newsletter.email"
+    #emailInput="ngModel" minlength="1" required placeholder="Insira seu melhor e-mail"/>
+
+
+
+  <button type="submit" [disabled]="newsletterForm.invalid" class="btn btn-primary">
+    Inscreva-se
+  </button>
+  <div *ngIf="emailInput.invalid && emailInput.errors?.['minlength']">O campo de email não pode estar vazio.</div>
+  <div *ngIf="errorMessage || successMessage" class="text-danger" id="alteracormsg">{{ errorMessage }} {{ successMessage
+    }} </div>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="appformulariocss">
 <div class="search-text">
   <div class="container">
     <div class="row text-center">
@@ -33,13 +102,14 @@
         </form>
 
       </div>
-      <!--form-->
-    </div>
+      <form-->
+    <!-- </div> -->
     <!--row text-center-->
-  </div>
+  <!-- </div> -->
   <!--container-->
-</div>
+<!-- </div> -->
 <!--search-text-->
 
-</div><!--appformulariocss-->
+<!-- </div> -->
+<!--appformulariocss-->
 

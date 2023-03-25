@@ -1,4 +1,45 @@
-header{
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+
+*{
+  color: black;
+  background-color: chocolate;
+  color: blanchedalmond;
+
+}
+.container-fluid{
+  height: var(--header-height);
+  min-height: 0.1px;
+}
+.leftcolcss{
+  font-size: large;
+  font-weight: 800;
+  font: 2em sans-serif;
+  padding: 1%;
+  font-family: 'Nerko One', cursive;
+  text-shadow: 0.1em 0.1em 0.2em black;
+
+
+}
+
+.rightcolcss{
+  padding-right: 5%;
+  padding-top: 1%;
+
+  }
+
+  ul li{
+    padding-right: 30px;
+  }
+
+
+
+
+
+
+
+
+/* header{
     width: 100vw;
     height: 15vh;
     background-color: #868684;
@@ -10,5 +51,5 @@ header p {
     font-size: 3.0em;
     line-height: 15vh;
     font-family: 'Nerko One', cursive;
-    
-}
+
+} */
