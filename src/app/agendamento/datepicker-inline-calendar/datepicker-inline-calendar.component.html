@@ -1,0 +1,17 @@
+<!--datepicker-inline-calendar.component.html-->
+<div class="conteudo_datapicker_css">
+  <mat-card class="demo-inline-calendar-card">
+    <mat-calendar
+    [(selected)]="selected"
+    [minDate]="minDate"
+    [maxDate]="maxDate"
+    [dateFilter]="dateFilter"
+    (selectedChange)="onDateChange($event)"></mat-calendar>
+  </mat-card>
+  <br />
+
+  <p *ngIf="!selected">Selecione uma data.</p>
+  <p *ngIf="selected" [ngClass]="{ 'selected-date': selected }">Data selecionada: {{ selected | date: 'mediumDate': '':
+    'pt' }}</p>
+</div>
+<!--fechamento div class conteudo_datapicker_css-->

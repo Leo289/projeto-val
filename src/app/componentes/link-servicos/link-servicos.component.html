@@ -1,0 +1,16 @@
+<!-- link-servicos.component.html -->
+<div class="servicos-container link-servicos">
+  <ng-container *ngFor="let servico of servicos; let i = index">
+    <a [routerLink]="[servico.route]" class="servico-link servico-item">
+      <div class="">
+        <p class="servico-nome">{{servico.nome}}</p>
+      </div>
+      <hr class="link-divider" />
+    </a>
+    <ng-container *ngIf="i === 5">
+      <div class="hr-container">
+        <hr />
+      </div>
+    </ng-container>
+  </ng-container>
+</div>

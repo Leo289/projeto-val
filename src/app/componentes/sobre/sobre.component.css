@@ -1,0 +1,7 @@
+.sobre_tratamento{
+  min-height: var(--central-component-height);
+    /* Variável definida em src/styles.css - class :root{} */
+    width: 25%;
+    text-align: justify;
+
+}

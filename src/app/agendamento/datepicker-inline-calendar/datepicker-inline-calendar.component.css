@@ -1,0 +1,72 @@
+/* datepicker-inline-calendar.component.css */
+
+.conteudo_datapicker_css{
+  margin: 0;
+}
+
+.demo-inline-calendar-card {
+  width: 250px;
+  font-size: 20px;
+}
+
+:host ::ng-deep .mat-mdc-button:not(:disabled) {
+  color: blanchedalmond;
+  font-size: 18px;
+} /* Mês e ano do calendário */
+
+:host ::ng-deep .mat-calendar-arrow {
+  color: blanchedalmond;
+  /* cor da seta do calendário */
+}
+:host ::ng-deep .mat-calendar-period-button {
+
+  font-size: 26px;
+  /* cor do botão de período do calendário (mês ou ano) */
+}
+
+:host ::ng-deep .mat-calendar-table-header {
+  color: #080807;
+  /* cor do texto nos dias da semana no calendário */
+}
+
+:host ::ng-deep .mat-calendar-table-header th {
+  font-size: 16px;
+  font-weight: bold;
+} /* texto nos dias da semana no calendário */
+
+:host ::ng-deep .mat-calendar-body-cell-content {
+  color: red;
+  font-size: 20px;
+  /* cor do texto nos dias no calendário */
+}
+
+:host ::ng-deep .mat-calendar-header {
+  background-color: chocolate;
+  /* cor do fundo do header */
+  color: blanchedalmond;
+  font-size: 26px;
+  /* cor do texto no header */
+}
+
+/* :host ::ng-deep .mat-calendar-header-label {
+    cor das descrições de mês e ano } */
+
+:host ::ng-deep .mat-mdc-focus-indicator
+{
+  color:rgb(212, 212, 219);
+  font-size: 56px;
+}
+:host ::ng-deep .mat-calendar-arrow {display: none;}
+
+p { color: chocolate;
+    font-size: large;
+
+}
+
+:host ::ng-deep .mat-calendar-body-selected{
+  color:aliceblue
+}
+
+:host ::ng-deep .mat-calendar-period-button {
+  pointer-events: none;
+}

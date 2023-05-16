@@ -1,0 +1,15 @@
+*{
+  height: var(--central-component-height); /* Variável definida em src/styles.css - class :root{} */
+  }
+
+
+
+.btnsaircss {
+  width: 5%;
+  height: 5%;
+  min-width: fit-content;
+}
+
+
+
+

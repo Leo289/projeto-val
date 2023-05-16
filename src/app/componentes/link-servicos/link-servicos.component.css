@@ -1,0 +1,93 @@
+/*link-servicos.component.css*/
+.servicos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.servico-item {
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+.servico-nome {
+  font-size: 14px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #696968;
+}
+
+.hr-container {
+  width: 100%;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hr-container hr {
+  border: 0;
+  border-top: 1px solid #696968;
+  margin: 0;
+}
+
+.link-divider {
+  display: none;
+  border: 0;
+  border-top: 1px solid #696968;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 1900px) {
+  .servico-item {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 1575px) {
+  .hr-container {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .servicos-container {
+      flex-direction: column;
+      max-height: 45vh;
+      padding-top: 10px;
+
+    }
+
+    .servico-item {
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-top: 0px;
+      padding: 0px;
+    }
+
+    .hr-container hr {
+
+
+    }
+
+        .hr-container {
+          display: none;
+
+        }
+
+        .link-divider {
+          display: block;
+          margin-top: 4.5px;
+          margin-bottom: 4.5px;
+          margin-left: -11px;
+        }
+}

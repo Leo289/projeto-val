@@ -1,0 +1,89 @@
+{
+    "servicos": [
+        {
+            "nome": "Corte Masculino",
+            "descricao": "Corte de cabelo masculino feito com tesoura e/ou máquina",
+            "preco": 50.00,
+            "duracao": "30 minutos",
+            "route": "/cortes-masculinos"
+        },
+        {
+            "nome": "Corte Feminino",
+            "descricao": "Corte de cabelo feminino feito com tesoura e/ou máquina",
+            "preco": 80.00,
+            "duracao": "1 hora",
+            "route": "/cortes-femininos"
+        },
+        {
+            "nome": "Coloração",
+            "descricao": "Aplicação de tintura nos cabelos",
+            "preco": 120.00,
+            "duracao": "2 horas",
+            "route": "/coloracao"
+        },
+        {
+            "nome": "Manicure",
+            "descricao": "Manicure com aplicação de esmalte e retirada de cuticula",
+            "preco": 40.00,
+            "duracao": "45 minutos",
+            "route": "/manicure"
+        },
+        {
+            "nome": "Pedicure",
+            "descricao": "Pedicure com aplicação de esmalte",
+            "preco": 50.00,
+            "duracao": "1 hora",
+            "route": "/pedicure"
+        },
+        {
+            "nome": "Escova Progressiva",
+            "descricao": "Alisamento progressivo dos cabelos",
+            "preco": 200.00,
+            "duracao": "3 horas",
+            "route": "/escova"
+        },
+        {
+            "nome": "Design de Sobrancelhas",
+            "descricao": "Design de sobrancelhas com pinça e/ou cera",
+            "preco": 40.00,
+            "duracao": "30 minutos",
+            "route": "/design-sobrancelhas"
+        },
+        {
+            "nome": "Hidratação Capilar",
+            "descricao": "Hidratação profunda dos cabelos",
+            "preco": 60.00,
+            "duracao": "1 hora",
+            "route": "/hidratacao-capilar"
+        },
+        {
+            "nome": "Depilação",
+            "descricao": "Depilação de pernas, axilas, virilha, entre outros",
+            "preco": 100.00,
+            "duracao": "2 horas",
+            "route": "/depilacao"
+        },
+        {
+            "nome": "Maquiagem",
+            "descricao": "Maquiagem para eventos, casamentos, formaturas, entre outros",
+            "preco": 100.00,
+            "duracao": "1 hora",
+            "route": "/maquiagem"
+        },
+        {
+            "nome": "Spa dos pés",
+            "descricao": "Massagem para relaxar os pés e retirada de células mortas e hidratação",
+            "preco": 80.00,
+            "duracao": "1 hora",
+            "route": "/massagem"
+        },
+        {
+            "nome": "Limpeza de Pele",
+            "descricao": "Limpeza de pele profunda com extração de cravos e espinhas",
+            "preco": 120.00,
+            "duracao": "1 hora",
+            "route": "/limpeza-pele"
+        }
+    ]
+}
+
