@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .servico-item {
@@ -10,11 +11,13 @@
   margin-right: 1%;
   padding: 1px;
   box-sizing: border-box;
+
 }
 
 .servico-nome {
   font-size: 14px;
   margin: 0;
+  color: #696968;
 }
 
 a {
