@@ -25,6 +25,7 @@ import { FormularioComponent } from './componentes/formulario/formulario.compone
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HeaderComponent } from './componentes/header/header.component';
+import { LinkServicosComponent } from './componentes/link-servicos/link-servicos.component';
 import { CorpoComponent } from './componentes/corpo/corpo.component';
 import { GaleriadefotosComponent } from './componentes/galeriadefotos/galeriadefotos.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -42,11 +43,12 @@ import { AgendamentoComponent } from './componentes/agendamento/agendamento.comp
     FormularioComponent,
     FooterComponent,
     HeaderComponent,
+    LinkServicosComponent,
     CorpoComponent,
     GaleriadefotosComponent,
     LoginComponent,
     AgendamentoComponent,
-    
+
 
 
   ],

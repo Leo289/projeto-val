@@ -1,7 +1,7 @@
 //newsletter.service.ts
 import { Injectable } from '@angular/core';
 import { addDoc, collection, Firestore, getDocs, query, where } from '@angular/fire/firestore';
-import { Newsletter } from '../newsletter.interface';
+import { Newsletter } from '../newsletter';
 
 @Injectable({ providedIn: 'root' })
 export class NewsletterService {

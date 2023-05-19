@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Newsletter } from 'src/app/newsletter.interface';
-import { NewsletterService } from 'src/app/newsletter.service';
+import { Newsletter } from 'src/app/newsletter';
+import { NewsletterService } from 'src/app/services/newsletter.service';
+
 
 @Component({
   selector: 'app-formulario',
