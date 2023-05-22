@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+// app.module.ts
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -34,9 +35,6 @@ import { LoginComponent } from './componentes/login/login.component';
 import { AgendamentoComponent } from './componentes/agendamento/agendamento.component';
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,8 +46,6 @@ import { AgendamentoComponent } from './componentes/agendamento/agendamento.comp
     GaleriadefotosComponent,
     LoginComponent,
     AgendamentoComponent,
-
-
 
   ],
   imports: [
@@ -71,13 +67,13 @@ import { AgendamentoComponent } from './componentes/agendamento/agendamento.comp
     AngularFireModule.initializeApp(environment.firebase),
     MatSnackBarModule,
     FontAwesomeModule
-
-
   ],
 
   providers: [
     ScreenTrackingService,UserTrackingService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
+
 export class AppModule { }
