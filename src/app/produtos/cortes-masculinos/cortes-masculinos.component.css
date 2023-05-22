@@ -1,6 +1,7 @@
+/* cortes-masculinos.component.css */
 .corte_masculino {
 
-  background-image: url("/assets/cortemasculino.jpeg");
+  background-image: url("src\assets\cortemasculino.jpeg");
 
 }
 
