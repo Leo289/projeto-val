@@ -1,3 +1,5 @@
-.colocao_css {
+/*coloracao.component.css*/
+.coloracao_css {
   background-image: url("/assets/Coloração.jpg");
+  background-position: top !important;
 }

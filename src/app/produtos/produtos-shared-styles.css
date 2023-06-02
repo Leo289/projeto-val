@@ -1,9 +1,9 @@
 /*produtos-shared-styles.css*/
 
 .todos_componentes_produtos_css {
-    height: var(--central-component-height); /* Variável definida em src/styles.css - class :root{} */
+    height: 80vh;
     width: 100vw;
-    max-height: 50vh;
+    max-height: 80vh;
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;

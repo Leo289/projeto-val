@@ -1,8 +1,8 @@
+// formulario.component.ts
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Newsletter } from 'src/app/newsletter';
 import { NewsletterService } from 'src/app/services/newsletter.service';
-
 
 @Component({
   selector: 'app-formulario',
@@ -19,10 +19,16 @@ export class FormularioComponent implements OnInit {
   ngOnInit(): void { }
 
   async onSubmit(newsletterForm: NgForm) {
+    // Limpar mensagens existentes
+    this.errorMessage = '';
+    this.successMessage = '';
+
     try {
       const docId = await this.newsletterService.addNewsletter(this.newsletter);
       console.log(`Documento adicionado com sucesso: ${docId}`);
       this.successMessage = 'Email cadastrado com sucesso!';
+      // Redefina newsletter.email somente se a operação for bem-sucedida
+      this.newsletter.email = '';
       setTimeout(() => {
         this.successMessage = '';
       }, 10000);
@@ -34,14 +40,5 @@ export class FormularioComponent implements OnInit {
         this.errorMessage = '';
       }, 10000);
     }
-    this.newsletter.email = '';
   }
 }
-
-
-
-
-
-
-
-

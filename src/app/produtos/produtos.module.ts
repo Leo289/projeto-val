@@ -13,6 +13,7 @@ import { EscovaComponent } from './escova/escova.component';
 import { MaquiagemComponent } from './maquiagem/maquiagem.component';
 import { MassagemComponent } from './massagem/massagem.component';
 import { LimpezaPeleComponent } from './limpeza-pele/limpeza-pele.component';
+import { SpaDosPesComponent } from './spa-dos-pes/spa-dos-pes.component';
 
 
 
@@ -29,7 +30,8 @@ import { LimpezaPeleComponent } from './limpeza-pele/limpeza-pele.component';
     EscovaComponent,
     MaquiagemComponent,
     MassagemComponent,
-    LimpezaPeleComponent
+    LimpezaPeleComponent,
+    SpaDosPesComponent
   ],
   imports: [
     CommonModule

@@ -1,18 +1,112 @@
-.main{
-   
+/* corpo.component.css */
+.main {
+  height: 60vh;
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
-    height: calc(100vh - 60px);
-    width: 100vw;
+.ngb-carousel {
+  width: 100%;
+  /* Altera a largura para 100% da largura do elemento pai */
+  height: 100%;
+  /* Altera a altura para 100% da altura do elemento pai */
+}
 
-    max-height: 50vh;
-    background-image: url("/assets/bg_corpo.jpg");
-    background-color: #cccccc;       /* Used if the image is unavailable */
-    background-position: center;       /* Center the image */
-    background-repeat: no-repeat;      /* Do not repeat the image */
-    background-size: cover;            /* Resize the background image to cover the entire container */
-    color: aliceblue;
+.carousel-item {
+  width: 100%;
+  /* Faz com que cada item do carrossel ocupe todo o espaço disponível */
+  height: 100%;
+  /* Faz com que cada item do carrossel ocupe todo o espaço disponível */
+}
 
+.slide-container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide-container img,
+.carousel-item img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: top;
+  /* Alinha as imagens no topo do contêiner */
+}
+
+/* Para telas com largura menor que 830px */
+@media (max-width: 830px) {
+  .main {
+    height: 60vh;
+    /* Altura automática para acomodar o conteúdo */
+  }
+
+  .ngb-carousel,
+  .carousel-item,
+  .slide-container,
+  .slide-container img,
+  .carousel-item img {
+    height: 60vh;
+  }
+    .slide-container img,
+    .carousel-item img {
+      object-fit: contain;
+      object-position: center;
     }
+}
 
-.container{
+/* Para telas com largura maior ou igual a 830px e menor que 1200px (desktop) */
+@media (min-width: 830px) and (max-width: 1199px) {
+  .main {
+    height: 70vh;
+    /* Altura igual à altura da janela do navegador */
+  }
+
+  .ngb-carousel,
+  .carousel-item,
+  .slide-container,
+  .slide-container img,
+  .carousel-item img {
+    height: 70vh;
+  }
+
+    .slide-container img,
+    .carousel-item img {
+      object-fit: contain;
+      object-position: center;
+    }
+}
+
+/* Para telas com largura maior ou igual a 1200px */
+@media (min-width: 1200px) {
+  .main {
+    height: 63vh;
+    /* Altura igual à altura da janela do navegador */
+  }
+
+  .ngb-carousel,
+  .carousel-item,
+  .slide-container,
+  .slide-container img,
+  .carousel-item img {
+    height: 63vh;
+  }
+
+  .slide-container img,
+  .carousel-item img {
+  object-fit: contain;
+  object-position: center;
+    /* Para telas maiores, as imagens começam um pouco mais para baixo */
+  }
 }

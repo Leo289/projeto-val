@@ -1,53 +1,84 @@
 /* footer.component.css */
 footer {
-    width: 100vw;
-    background-color: #33383c;
-    max-height: 25vh;
+  width: 100vw;
+  background-color: #33383c;
 }
 
 .logo {
-    color: #FFF;
-    font-weight: 700;
-    font-size: 30px;
-    float: left;
-    border-radius: 50px;
-    padding: 10px 0px;
-    height: 22.5vh; /* 90% de 25vh */
+  color: #FFF;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 10px 0px;
+  height: auto;
+  /* altura auto para ajustar à div do carrossel */
 }
 
-.address span, .menu span {
-color: blanchedalmond;
-   font-weight: bold;
-   border-bottom: 1px solid #c7c7c7;
-   padding: 10px 0px;
-   display: block;
-   text-transform: uppercase;
-   font-size: 16px;
-   letter-spacing: 3px;
+.list-base span {
+  color: blanchedalmond;
+  font-weight: bold;
+  border-bottom: 1px solid #c7c7c7;
+  padding: 10px 0px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
 }
 
-.address li a, .menu li a {
-    color: blanchedalmond;
-    letter-spacing: 3px;
-    text-decoration: none;
-    font-size: 14px;
+.list-base li a {
+  color: blanchedalmond;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.address li, .menu li {
-    margin: 20px 0px;
-    list-style: none;
+.list-base li {
+  margin: 20px 0px;
+  list-style: none;
 }
 
-.address li a:hover, .menu li a:hover {
-    color: #da3e44;
-    transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
+.list-base li a:hover {
+  color: #da3e44;
+  transition: color 1s ease-in-out;
 }
 
-.address .fa {
-    color: #da3e44;
-    margin-right: 10px;
-    font-size: 18px;
+.list-base .fa {
+  color: #da3e44;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Novas regras de CSS para centralizar o carrossel e ajustar o tamanho da imagem */
+.col-md-4.col-sm-6.col-xs-12.d-md-block.d-none {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-carousel .carousel-item img,
+.logo-carousel img {
+  height: auto;
+  max-height: 30vh;
+  object-fit: contain;
+  border-radius: 40%;
+}
+
+/* Oculta os controles (setas) */
+.logo-carousel .carousel-control-prev,
+.logo-carousel .carousel-control-next {
+  display: none;
+}
+
+/* Oculta os indicadores (pequenos círculos na parte inferior) */
+.logo-carousel .carousel-indicators {
+  display: none;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: .7s;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
 }

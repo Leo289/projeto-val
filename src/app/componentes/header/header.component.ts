@@ -1,3 +1,4 @@
+// header.component.ts
 import { Component, OnInit } from '@angular/core';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 

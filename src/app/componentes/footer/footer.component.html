@@ -1,51 +1,54 @@
 <!-- footer.component.html -->
 <footer>
-    <div class="container">
-      <div class="row">
-               <div class="col-md-4 col-sm-6 col-xs-12">
-                <img class="logo" src="/assets/2022-07-22_084337.png" alt="Logo">
-                <span class="logo"></span>
-               </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
+        <ngb-carousel class="logo-carousel carousel-fade" [wrap]="true" [showNavigationArrows]="false"
+          [showNavigationIndicators]="false">
+          <ng-template ngbSlide *ngFor="let image of images; index as i">
+            <img [src]="image" alt="Slide {{i + 1}}" class="logo">
+          </ng-template>
+        </ngb-carousel>
+      </div>
 
-               <div class="col-md-4 col-sm-6 col-xs-12">
-                   <ul class="menu">
-                        <span>Menu</span>
-                        <li>
-                           <a routerLink="/">Página principal</a>
-                         </li>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="menu list-base">
+          <span>Menu</span>
+          <li>
+            <a routerLink="/">Página principal</a>
+          </li>
 
-                         <li>
-                            <a href="#">Sobre nossa empresa</a>
-                         </li>
+          <li>
+            <a href="#">Sobre nossa empresa</a>
+          </li>
 
-                         <li>
-                            <a routerLink="/galeriadefotos">Galeria de fotos</a>
-                         </li>
+          <li>
+            <a routerLink="/galeriadefotos">Galeria de fotos</a>
+          </li>
 
-                         <li>
-                           <a><app-login></app-login></a> <!--LoginComponent-->
-                        </li>
-                    </ul>
-               </div>
+          <li>
+            <a><app-login></app-login></a> <!--LoginComponent-->
+          </li>
+        </ul>
+      </div>
 
-               <div class="col-md-4 col-sm-6 col-xs-12">
-                 <ul class="address">
-                   <span>Contato</span>
-                   <li>
-                      <i class="fa fa-phone" aria-hidden="true"></i>
-                      <a href="#">21 971277527</a>
-                   </li>
-                   <li>
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
-                      <a href="#">Rua Eng Ernaldo Cravo Peixoto, 105, Sl 403,
-                        Tijuca, Rio de Janeiro, RJ.</a>
-                   </li>
-                   <li>
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                      <a href="#">valmartins@hotmail.com</a>
-                   </li>
-                  </ul>
-               </div>
-           </div>
-       </div>
-   </footer>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="address list-base">
+          <span>Contato</span>
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a href="#">21 971277527</a>
+          </li>
+          <li>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <a href="#">Rua Eng Ernaldo Cravo Peixoto, 105, Sl 403, Tijuca, Rio de Janeiro, RJ.</a>
+          </li>
+          <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="#">valmartins@hotmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

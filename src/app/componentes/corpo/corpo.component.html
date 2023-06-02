@@ -1,12 +1,37 @@
+<!-- corpo.component.html -->
 <main class="main">
-  <div class="container">
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="slide-container">
+        <img class="d-block w-100" src="https://i.postimg.cc/bNQp0RDW/1.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Slider One Item</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas
+            vero.</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="slide-container">
+        <img class="d-block w-100" src="https://i.postimg.cc/pVzg3LWn/2.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Slider Two Item</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas
+            vero.</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="slide-container">
+        <img class="d-block w-100" src="/assets/valdirene.png" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Slider Three Item</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas
+            vero.</p>
+        </div>
+      </div>
+    </ng-template>
 
-   <!-- <div>
-    <ul >
-      <li *ngFor="let email of emails">
-        {{ email.email }} </li>
-    </ul>
-  </div> -->
 
-</div>
+  </ngb-carousel>
 </main>

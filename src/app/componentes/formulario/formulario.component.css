@@ -1,25 +1,25 @@
-.appformulariocss{
-    padding-top: 1%;
-    padding-bottom: 1.5%;
-    background-color: #696968;
-    text-align: center;
+/* formulario.component.css */
 
+.appformulariocss {
+  padding-top: 1%;
+  padding-bottom: 1.5%;
+  background-color: #696968;
+  text-align: center;
 }
 
 #alteracormsg {
   color: antiquewhite !important;
 }
 
-.container{
+.container {
   padding: 0.8%;
 }
 
-form{
-
-
+form {
+  /* Pode inserir quaisquer regras CSS para o formulário aqui */
 }
 
-input{
+input {
   width: 20vw;
   max-width: 350px;
   height: 40px;
@@ -34,59 +34,17 @@ input{
   }
 }
 
-/* @media screen and (min-height:350px) and (max-height:400px) {
-  .appformulariocss {
-  height: 30vh;
+input {
+  width: 40vw;
 }
-}
-@media screen and (min-height:401px) and (max-height:500px) {
-  .appformulariocss {
-    height: 25vh;
-  }
-}
-@media screen and (min-height:501px) and (max-height:600px) {
-  .appformulariocss {
-    height: 22vh;
-  }
-}
-@media screen and (min-height:601px) and (max-height:700px) {
-  .appformulariocss {
-    height: 22vh;
-  }
-} */
-
-
-/* .search-text {
-  height: 25%;
-  max-height: 25%;
-	background-color: #696968;
-	padding-top: 30px;
-	padding-bottom: 0px;
-} */
-
-/* .search-text .input-search {
-  height: 40px;
-	width: 40%;
-	padding-left: 20px;
-  color: #333;
-  overflow: hidden;
-
-}
-
-.search-text .btn-search {
-    background: #da3e44;
-    border: none;
-	  color: blanchedalmond;
-	  height: 44px;
-    width: 80px;
-} */
 
 h4 {
-    color: blanchedalmond;
-    font-weight: 800;
-    font-size: 1.4em;
-	font-family: 'Nerko One', cursive;
+  color: blanchedalmond;
+  font-weight: 800;
+  font-size: 1.4em;
+  font-family: 'Nerko One', cursive;
 }
 
-
-
+button[disabled] {
+  background-color: grey;
+}

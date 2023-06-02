@@ -1,3 +1,5 @@
+/* header.component.css*/
+
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 
 
@@ -16,7 +18,7 @@
   font-weight: 800;
   font: 2em sans-serif;
   padding: 1%;
-  font-family: 'Nerko One', cursive;
+  font-family: 'Arial', sans-serif;
   text-shadow: 0.1em 0.1em 0.2em black;
 
 
@@ -32,24 +34,15 @@
     padding-right: 30px;
   }
 
-
-
-
-
-
-
-
-/* header{
-    width: 100vw;
-    height: 15vh;
-    background-color: #868684;
+.leftcolcss a {
+  text-decoration: none;   /* Remove a sublinhação */
+  color: inherit;   /* A cor do link será a mesma do texto que o envolve */
+  transition: all 0.3s ease;   /* Faz a transição de todas as propriedades de maneira suave */
 }
 
-header p {
-    text-align: center;
-    color: blanchedalmond;
-    font-size: 3.0em;
-    line-height: 15vh;
-    font-family: 'Nerko One', cursive;
+.leftcolcss a:hover {
+  text-shadow: 0.2em 0.2em 0.3em black;   /* Aumenta levemente a sombra do texto ao passar o mouse */
+  font-size: 1.01em;   /* Aumenta levemente o tamanho da fonte ao passar o mouse */
+}
 
-} */
+

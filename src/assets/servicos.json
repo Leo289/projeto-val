@@ -56,13 +56,7 @@
             "duracao": "1 hora",
             "route": "/hidratacao-capilar"
         },
-        {
-            "nome": "Depilação",
-            "descricao": "Depilação de pernas, axilas, virilha, entre outros",
-            "preco": 100.00,
-            "duracao": "2 horas",
-            "route": "/depilacao"
-        },
+
         {
             "nome": "Maquiagem",
             "descricao": "Maquiagem para eventos, casamentos, formaturas, entre outros",
@@ -72,18 +66,12 @@
         },
         {
             "nome": "Spa dos pés",
-            "descricao": "Massagem para relaxar os pés e retirada de células mortas e hidratação",
+            "descricao": "",
             "preco": 80.00,
             "duracao": "1 hora",
-            "route": "/massagem"
-        },
-        {
-            "nome": "Limpeza de Pele",
-            "descricao": "Limpeza de pele profunda com extração de cravos e espinhas",
-            "preco": 120.00,
-            "duracao": "1 hora",
-            "route": "/limpeza-pele"
+            "route": "/spa-dos-pes"
         }
+
     ]
 }
 

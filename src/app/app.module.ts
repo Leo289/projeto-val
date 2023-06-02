@@ -33,6 +33,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './componentes/login/login.component';
 import { AgendamentoComponent } from './componentes/agendamento/agendamento.component';
+import { NavbarTestComponent } from './navbar-test/navbar-test.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { AgendamentoComponent } from './componentes/agendamento/agendamento.comp
     GaleriadefotosComponent,
     LoginComponent,
     AgendamentoComponent,
+    NavbarTestComponent,
 
   ],
   imports: [

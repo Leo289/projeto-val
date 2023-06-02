@@ -1,6 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-
-
+// corpo.component.ts
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-corpo',
@@ -8,23 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./corpo.component.css']
 })
 export class CorpoComponent implements OnInit {
-  
 
   constructor() {  }
 
   ngOnInit(): void {}
 
-//     async (params:type) => {
-//         this.getEmail();
-
-//       }
-//       getEmail(){
-//         this.newsletterService.getEmail().subscribe(emails => {
-//         this.emails = emails;
-
-//     }
-
-// });
-//   }
-// }
 }

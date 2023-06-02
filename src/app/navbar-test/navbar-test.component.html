@@ -1,0 +1,66 @@
+<!-- navbar-test.component.html -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Studio Val Martins</a>
+    <button class="navbar-toggler" (click)="navbarTogglerClick()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngbCollapse]="isNavbarCollapsed" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" [ngClass]="{active: active === 1}">
+          <a class="nav-link" (click)="active = 1" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<ngb-carousel>
+  <ng-template ngbSlide>
+    <img class="d-block w-100" style="height: 100vh; object-fit: cover;" src="https://i.postimg.cc/bNQp0RDW/1.jpg"
+      alt="First slide">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Slider One Item</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.
+      </p>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <img class="d-block w-100" style="height: 100vh; object-fit: cover;" src="https://i.postimg.cc/pVzg3LWn/2.jpg"
+      alt="Second slide">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Slider Two Item</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.
+      </p>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <img class="d-block w-100" style="height: 100vh; object-fit: cover;" src="https://i.postimg.cc/0y2F6Gpp/3.jpg"
+      alt="Third slide">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Slider Three Item</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.
+      </p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<!--- ignore the code below-->
+
+<div class="link-area">
+  <a href="https://www.youtube.com/channel/UCki4IDK86E6_pDtptmsslow" target="_blank">Click for More</a>
+</div>
