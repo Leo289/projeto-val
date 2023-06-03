@@ -1,4 +1,3 @@
-/*link-servicos.component.css*/
 .servicos-container {
   display: flex;
   flex-wrap: wrap;
@@ -58,37 +57,80 @@ a {
   }
 }
 
+@media only screen and (max-width: 959px) and (min-width: 818px) {
+  .my-accordion {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .servicos-container {
-      flex-direction: column;
-      max-height: 45vh;
-      padding-top: 10px;
+    flex-direction: column;
+    max-height: 45vh;
+    padding-top: 0px;
+  }
 
+  .servico-item {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .hr-container hr {}
+
+  .hr-container {
+    display: none;
+  }
+
+  .link-divider {
+    display: block;
+    margin-top: 4.5px;
+    margin-bottom: 4.5px;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  .my-accordion .mat-expansion-panel {
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0px;
+  }
+
+  .my-accordion .mat-expansion-panel-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .my-accordion .mat-expansion-panel-header .mat-content {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .servico-link {
+    display: block;
+    text-align: center;
+  }
+
+  .servico-nome {
+    margin-bottom: 0;
+  }
+
+    .mat-expansion-panel-body {
+      padding-top: 0px !important;
     }
 
-    .servico-item {
-      width: 100%;
-      margin-left: 10px;
-      margin-right: 0;
-      margin-bottom: 0;
-      margin-top: 0px;
-      padding: 0px;
-    }
 
-    .hr-container hr {
+  .mat-expansion-panel-header.mat-expanded .mat-content {
+    margin-bottom: 0;
+  }
 
 
-    }
-
-        .hr-container {
-          display: none;
-
-        }
-
-        .link-divider {
-          display: block;
-          margin-top: 4.5px;
-          margin-bottom: 4.5px;
-          margin-left: -11px;
-        }
 }

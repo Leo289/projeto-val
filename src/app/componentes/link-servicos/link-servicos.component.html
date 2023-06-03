@@ -1,16 +1,41 @@
 <!-- link-servicos.component.html -->
-<div class="servicos-container link-servicos">
-  <ng-container *ngFor="let servico of servicos; let i = index">
-    <a [routerLink]="[servico.route]" class="servico-link servico-item">
-      <div class="">
-        <p class="servico-nome">{{servico.nome}}</p>
-      </div>
-      <hr class="link-divider" />
-    </a>
-    <ng-container *ngIf="i === 4">
-      <div class="hr-container">
-        <hr />
-      </div>
-    </ng-container>
-  </ng-container>
+<div class="servicos-container link-servicos" *ngIf="isHandset$ | async; else desktopVersion">
+  <mat-accordion class="my-accordion">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header class="my-header">
+        <p class="servico-nome servico-link">Clique aqui e veja nossos serviços</p>
+      </mat-expansion-panel-header>
+      <ng-container *ngFor="let servico of servicos; let i = index">
+        <a [routerLink]="[servico.route]" class="servico-link servico-item">
+          <p class="servico-nome">{{servico.nome}}</p>
+        </a>
+        <hr class="link-divider" />
+        <ng-container *ngIf="i === 4">
+          <div class="hr-container">
+            <hr />
+          </div>
+        </ng-container>
+      </ng-container>
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>
+
+<ng-template #desktopVersion>
+  <!-- Sua versão desktop aqui -->
+  <!-- link-servicos.component.html -->
+  <div class="servicos-container link-servicos">
+    <ng-container *ngFor="let servico of servicos; let i = index">
+      <a [routerLink]="[servico.route]" class="servico-link servico-item">
+        <div class="">
+          <p class="servico-nome">{{servico.nome}}</p>
+        </div>
+        <hr class="link-divider" />
+      </a>
+      <ng-container *ngIf="i === 4">
+        <div class="hr-container">
+          <hr />
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+</ng-template>

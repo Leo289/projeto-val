@@ -22,6 +22,10 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
+// Angular Material
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatExpansionModule } from '@angular/material/expansion'
+
 import { FormularioComponent } from './componentes/formulario/formulario.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './componentes/footer/footer.component';
@@ -29,7 +33,7 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { LinkServicosComponent } from './componentes/link-servicos/link-servicos.component';
 import { CorpoComponent } from './componentes/corpo/corpo.component';
 import { GaleriadefotosComponent } from './componentes/galeriadefotos/galeriadefotos.component';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './componentes/login/login.component';
 import { AgendamentoComponent } from './componentes/agendamento/agendamento.component';
@@ -68,6 +72,7 @@ import { NavbarTestComponent } from './navbar-test/navbar-test.component';
 
     AngularFireModule.initializeApp(environment.firebase),
     MatSnackBarModule,
+    MatExpansionModule,
     FontAwesomeModule
   ],
 
