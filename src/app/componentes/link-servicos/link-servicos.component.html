@@ -1,12 +1,13 @@
 <!-- link-servicos.component.html -->
 <div class="servicos-container link-servicos" *ngIf="isHandset$ | async; else desktopVersion">
   <mat-accordion class="my-accordion">
-    <mat-expansion-panel>
+    <mat-expansion-panel (opened)="togglePanel()" (closed)="togglePanel()">
       <mat-expansion-panel-header class="my-header">
         <p class="servico-nome servico-link">Clique aqui e veja nossos serviços</p>
       </mat-expansion-panel-header>
+      <hr *ngIf="isPanelOpen" class="link-divider first-divider" /> <!-- Adicione esta linha -->
       <ng-container *ngFor="let servico of servicos; let i = index">
-        <a [routerLink]="[servico.route]" class="servico-link servico-item">
+        <a [routerLink]="[servico.route]" class="servico-link servico-item" [ngClass]="{'first-link': i === 0 && isPanelOpen}">
           <p class="servico-nome">{{servico.nome}}</p>
         </a>
         <hr class="link-divider" />

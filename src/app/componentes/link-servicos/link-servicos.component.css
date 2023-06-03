@@ -79,7 +79,7 @@ a {
     padding: 0px;
   }
 
-  .hr-container hr {}
+  /* .hr-container hr {} */
 
   .hr-container {
     display: none;
@@ -104,9 +104,10 @@ a {
     justify-content: center;
     align-items: center;
     border: none;
-    height: auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    max-height: 25px;
+    padding-right: 50px;
+    padding-left: 30px;
+    
   }
 
   .my-accordion .mat-expansion-panel-header .mat-content {
@@ -130,7 +131,26 @@ a {
 
   .mat-expansion-panel-header.mat-expanded .mat-content {
     margin-bottom: 0;
+
   }
+
+    ::ng-deep .mat-expansion-panel-body {
+      padding: 0px !important;
+    }
+
+        .first-divider {
+          margin-top: 10px;
+          /* Ajuste este valor para o que parecer melhor para você */
+        }
+
+        .first-link {
+          margin-top: 10px;
+          /* Ajuste este valor para o que parecer melhor para você */
+        }
+
+                        ::ng-deep.my-header {
+                  align-items: center;
+                }
 
 
 }

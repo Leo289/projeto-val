@@ -1,4 +1,3 @@
-// link-servicos.component.ts
 import { Component } from '@angular/core';
 import servicosJson from 'src/assets/servicos.json';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
@@ -18,6 +17,13 @@ export class LinkServicosComponent {
       shareReplay()
     );
 
+  // Novo campo para rastrear se o painel está aberto
+  public isPanelOpen: boolean = false;
+
   constructor(private breakpointObserver: BreakpointObserver) { }
 
+  // Nova função para alternar o valor de isPanelOpen
+  togglePanel() {
+    this.isPanelOpen = !this.isPanelOpen;
+  }
 }
