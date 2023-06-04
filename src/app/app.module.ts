@@ -38,6 +38,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './componentes/login/login.component';
 import { AgendamentoComponent } from './componentes/agendamento/agendamento.component';
 import { NavbarTestComponent } from './navbar-test/navbar-test.component';
+import { FeedbackModule } from './feedback/feedback.module';
 
 
 @NgModule({
@@ -73,6 +74,7 @@ import { NavbarTestComponent } from './navbar-test/navbar-test.component';
     AngularFireModule.initializeApp(environment.firebase),
     MatSnackBarModule,
     MatExpansionModule,
+    FeedbackModule,
     FontAwesomeModule
   ],
 

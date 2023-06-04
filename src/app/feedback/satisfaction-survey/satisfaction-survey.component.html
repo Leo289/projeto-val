@@ -1,0 +1,36 @@
+<!-- satisfaction-survey.component.html -->
+<div class="container my-4">
+  <h2 class="text-center mb-4">Pesquisa de Satisfação</h2>
+  <form (ngSubmit)="submit()">
+    <div class="form-group">
+      <label for="ratingEstablishment">Avaliação do Estabelecimento</label>
+      <select id="ratingEstablishment" [(ngModel)]="survey.ratingEstablishment" name="ratingEstablishment"
+        class="form-control" required>
+        <option *ngFor="let rating of [1, 2, 3, 4, 5]" [value]="rating">{{rating}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="ratingService">Avaliação do Serviço</label>
+      <select id="ratingService" [(ngModel)]="survey.ratingService" name="ratingService" class="form-control" required>
+        <option *ngFor="let rating of [1, 2, 3, 4, 5]" [value]="rating">{{rating}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="ratingSupport">Avaliação do Atendimento</label>
+      <select id="ratingSupport" [(ngModel)]="survey.ratingSupport" name="ratingSupport" class="form-control" required>
+        <option *ngFor="let rating of [1, 2, 3, 4, 5]" [value]="rating">{{rating}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Comentários</label>
+      <textarea id="comments" [(ngModel)]="survey.comments" name="comments" class="form-control"></textarea>
+    </div>
+
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </form>
+</div>

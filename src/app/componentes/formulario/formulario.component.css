@@ -15,9 +15,9 @@
   padding: 0.8%;
 }
 
-form {
+/* form {} */
   /* Pode inserir quaisquer regras CSS para o formulário aqui */
-}
+
 
 input {
   width: 20vw;

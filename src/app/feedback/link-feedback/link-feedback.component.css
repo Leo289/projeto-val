@@ -1,0 +1,15 @@
+/* link-feedback.component.css */
+.link-container {
+  width: 100%;
+  text-align: center;
+  background-color: #f2f2f2;
+  /* Ou a cor cinza claro que você preferir */
+}
+
+.link-container a {
+  color: #696968;
+  text-decoration: none;
+}
+::ng-deep :host {
+  color: #000000;
+}
