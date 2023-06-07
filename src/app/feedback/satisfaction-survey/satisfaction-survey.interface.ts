@@ -1,9 +1,9 @@
 // satisfaction-survey.interface.ts
 export interface SatisfactionSurvey {
-  name?: string;
-  email?: string;
-  ratingEstablishment: number;
-  ratingService: number;
-  ratingSupport: number;
+  ratingEstablishment: string;
+  ratingService: string;
+  ratingSupport: string;
   comments: string;
+  nome?: string;  // O nome é opcional
+  email?: string; // O e-mail é opcional
 }

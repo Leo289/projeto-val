@@ -1,36 +1,81 @@
 <!-- satisfaction-survey.component.html -->
-<div class="container my-4">
+<div *ngIf="displaySurvey" class="container my-4">
   <h2 class="text-center mb-4">Pesquisa de Satisfação</h2>
-  <form (ngSubmit)="submit()">
-    <div class="form-group">
-      <label for="ratingEstablishment">Avaliação do Estabelecimento</label>
-      <select id="ratingEstablishment" [(ngModel)]="survey.ratingEstablishment" name="ratingEstablishment"
-        class="form-control" required>
-        <option *ngFor="let rating of [1, 2, 3, 4, 5]" [value]="rating">{{rating}}</option>
-      </select>
-    </div>
 
-    <div class="form-group">
-      <label for="ratingService">Avaliação do Serviço</label>
-      <select id="ratingService" [(ngModel)]="survey.ratingService" name="ratingService" class="form-control" required>
-        <option *ngFor="let rating of [1, 2, 3, 4, 5]" [value]="rating">{{rating}}</option>
-      </select>
-    </div>
+  <div class="mx-auto" style="width: 50%; ">
 
-    <div class="form-group">
-      <label for="ratingSupport">Avaliação do Atendimento</label>
-      <select id="ratingSupport" [(ngModel)]="survey.ratingSupport" name="ratingSupport" class="form-control" required>
-        <option *ngFor="let rating of [1, 2, 3, 4, 5]" [value]="rating">{{rating}}</option>
-      </select>
-    </div>
+    <form (ngSubmit)="submit()">
 
-    <div class="form-group">
-      <label for="comments">Comentários</label>
-      <textarea id="comments" [(ngModel)]="survey.comments" name="comments" class="form-control"></textarea>
-    </div>
+      <!-- Os campos de avaliação -->
+      <div class="form-group" style="margin-bottom: 10px;">
+        <label for="ratingEstablishment">Avalie do Estabelecimento</label>
+        <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
+          <label class="btn btn-secondary" *ngFor="let rating of ratings">
+            <input type="radio" name="ratingEstablishment" [(ngModel)]="survey.ratingEstablishment" [value]="rating"
+              required>
+            {{rating}}
+          </label>
+        </div>
+      </div>
 
-    <div class="text-center mt-4">
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </div>
-  </form>
-</div>
+      <!-- Os campos de avaliação -->
+      <div class="form-group" style="margin-bottom: 10px;">
+        <label for="ratingService">Avalie do Serviço</label>
+        <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
+          <label class="btn btn-secondary" *ngFor="let rating of ratings">
+            <input type="radio" name="ratingService" [(ngModel)]="survey.ratingService" [value]="rating" required>
+            {{rating}}
+          </label>
+        </div>
+      </div>
+
+      <!-- Os campos de avaliação -->
+      <div class="form-group" style="margin-bottom: 10px;">
+        <label for="ratingSupport">Avalie do Atendimento</label>
+        <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
+          <label class="btn btn-secondary" *ngFor="let rating of ratings">
+            <input type="radio" name="ratingSupport" [(ngModel)]="survey.ratingSupport" [value]="rating" required>
+            {{rating}}
+          </label>
+        </div>
+      </div>
+
+      <!-- O campo de nome -->
+      <div class="form-group responsive-form-group" style="margin-bottom: 10px;">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" [(ngModel)]="survey.nome" name="nome" class="form-control" placeholder="Opcional">
+      </div>
+
+      <!-- O campo de email -->
+      <div class="form-group responsive-form-group" style="margin-bottom: 10px;">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" [(ngModel)]="survey.email" name="email" class="form-control"
+          placeholder="Opcional">
+        <div *ngIf="showInvalidEmailAlert" class="alert alert-warning">
+          O e-mail enviado é inválido.
+        </div>
+      </div>
+
+      <!-- O campo de comentários -->
+      <div class="form-group responsive-form-group" style="margin-bottom: 10px;">
+        <label for="comments">Comentários</label>
+        <textarea id="comments" [(ngModel)]="survey.comments" name="comments" class="form-control"
+          placeholder="Deixe aqui seu elogio, reclamação ou sugestão."></textarea>
+      </div>
+
+      <!-- Alerta de formulário enviado -->
+      <div *ngIf="showEmailSentAlert" class="alert alert-success mt-4">
+        Formulário enviado com sucesso!
+      </div>
+
+      <!-- O botão de envio -->
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+
+
+
+        </form>
+        </div>
+        </div>
+        <div #endForm></div>

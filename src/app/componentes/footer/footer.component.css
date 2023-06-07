@@ -9,8 +9,7 @@ footer {
   font-weight: 700;
   font-size: 30px;
   padding: 10px 0px;
-  height: auto;
-  /* altura auto para ajustar à div do carrossel */
+  height: auto;  /* altura auto para ajustar à div do carrossel */
 }
 
 .list-base span {

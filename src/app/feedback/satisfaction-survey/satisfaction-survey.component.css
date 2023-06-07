@@ -11,3 +11,34 @@
   color: #696968;
   text-decoration: none;
 }
+
+.alignment {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+@media (max-width: 768px) {
+  .responsive-form-group {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .responsive-form-group {
+    margin-left: -20%;
+    margin-right: -20%;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .responsive-form-group {
+    margin-left: -35%;
+    margin-right: -35%;
+  }
+
+}

@@ -1,7 +1,7 @@
 // app.module.ts
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -75,7 +75,11 @@ import { FeedbackModule } from './feedback/feedback.module';
     MatSnackBarModule,
     MatExpansionModule,
     FeedbackModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule.forRoot([
+      // outras rotas vão aqui
+      { path: 'feedback', loadChildren: () => import('./feedback/feedback.module').then(m => m.FeedbackModule) }
+    ])
   ],
 
   providers: [
